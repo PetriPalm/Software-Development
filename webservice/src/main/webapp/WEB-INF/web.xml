@@ -33,4 +33,10 @@
 		<servlet-name>task1</servlet-name>
 		<url-pattern>/rest/*</url-pattern>
 	</servlet-mapping>
+	<!--  This is because of Upload -->
+<!-- Because of Upload -->
+<init-param>
+	<param-name>jersey.config.server.provider.classnames</param-name>
+	<param-value>org.glassfish.jersey.media.multipart.MultiPartFeature</param-value>
+</init-param>	
 </web-app>
